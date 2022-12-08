@@ -14,6 +14,11 @@ public class Car {
 	}
 
 	public void setAcStatus(boolean acStatus) {
+		if(acStatus) {
+			System.out.println("Your car A/C is stared");
+		} else {
+			System.out.println("Your car A/C is stoped");
+		}
 		this.acStatus = acStatus;
 	}
 
@@ -52,13 +57,6 @@ public class Car {
 		}
 	}
 
-	// Set your A/C temperature
-	public void setAC(double choice) {
-		if(!acStatus) {
-			acStatus = true;
-		}
-		acTemp = choice;
-	}
 	
 	
 }
